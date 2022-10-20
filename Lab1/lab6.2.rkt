@@ -1,0 +1,15 @@
+(display "Зінган Михайло ІПЗ-41. Лаб 1. Варіант 6. Завдання 2.\n")
+(display "n: ")
+(define n (read))
+
+(define (f n)
+  (if (= 0 (- n (remainder n 10)))
+      (display "")
+      (f (/ (- n (remainder n 10)) 10))
+   )
+  (display " ")
+  (display (remainder n 10))
+ )
+
+(display "Answer: ")
+(f n)
